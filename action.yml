@@ -14,6 +14,9 @@ inputs:
     description: "Username for ssh connection"
     required: false
     default: "git"
+  sync_command:
+    description: "The GIT command used for mirroring. The remote is called 'mirror'"
+    required: false    
 runs:
   using: 'docker'
   image: 'Dockerfile'
